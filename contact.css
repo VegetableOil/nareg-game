@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    background-color: #1a1a1d;
+}
+
+#nav {
+    height: 10vh;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    border-bottom: 1px solid white;
+    background-color: #1a1a1de7;
+}
+
+#nav-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 0.1s;
+}
+
+.nav-link:hover {
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.39);
+    transform: translate(2px, 2px);
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+#contact {
+    background-color: #1a1a1d;
+    min-height: 90vh;
+    padding: 1rem;
+    width: 90vw;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, .number, h2, .nav-link, #contact-h1, a {
+    font-family: 'Baloo Chettan 2';
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.39);
+    text-decoration: none;
+}
+
+.contact-p {
+    font-family: 'Baloo Chettan 2';
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.39);
+    font-size: 1.7rem;
+}
+
+#contact-h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.39);
+    color: white;
+    background-color: #1a1a1d;
+    border: 1px solid white;
+    border-radius: 0.3rem;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.39);
+    padding: 0 0.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.1rem;
+}
+
+button:hover {
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.39);
+    transform: translate(2px, 2px);
+    text-shadow: 0 0 0 black;
+}
+
+img {
+    width: 4rem;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+      font-size: 12px;
+    }
+  }

@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    background-color: #1a1a1d;
+}
+
+:root {
+    font-size: 16px;
+}
+
+#body {
+    background-color: #1a1a1d;
+}
+
+#main {
+    min-height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1d00;
+}
+
+#nav {
+    height: 10vh;
+    border-bottom: 1px solid white;
+    background-color: #1a1a1d00;
+}
+
+#nav-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-link:hover {
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.39);
+    transform: translate(2px, 2px);
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+#equation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1, .number, h2, p, .nav-link {
+    font-family: 'Baloo Chettan 2';
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.39);
+}
+
+.number, input {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.number {
+    margin-right: 1rem;
+}
+
+input {
+    width: 4rem;
+    height: 3rem;
+    border: 1px solid white;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 2px 2px 0px inset rgba(0,0,0,0.39);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#scorecard {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.card {
+    margin: 0 1rem;
+    border: 1px solid white;
+    padding: 1rem;
+    box-shadow: 2px 2px 0px inset rgba(0,0,0,0.39);
+    border-radius: 0.3rem;
+}
+
+#score, #incorrect, #total, #perc {
+    font-size: 2rem;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    max-width: 80vw;
+    background-color: #1a1a1d;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#popup h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+#popup button {
+    background-color: #1a1a1d;
+    border: 1px solid white;
+    border-radius: 0.3rem;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.39);
+    padding: 0.7rem 1.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.1s;
+    letter-spacing: 0.2rem;
+    color: white;
+}
+
+#popup input {
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+#popup button:hover {
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.39);
+    transform: translate(2px, 2px);
+    text-shadow: 0 0 0 black;
+}
+  
+  @media only screen and (max-width: 600px) {
+    :root {
+      font-size: 12px;
+    }
+
+    #main {
+        width: 100vw;
+    }
+
+    #scorecard {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        grid-template-rows: auto auto;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    #nav {
+        background-color: rgba(255, 0, 0, 0);
+    }
+  }

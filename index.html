@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='icon' href='favicon.png' type='image/x-icon'/ >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Make math easy with this simple game for kids. 5 minutes a day goes a long way!">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <script src="https://pushsar.com/pfe/current/tag.min.js?z=3146925" data-cfasync="false" async></script>
+    <meta name="propeller" content="c19ca31e24d321327d9deadfbf3c9dc0">
+    <title>Nareg Game</title>
+</head>
+<body id="body">
+    <div id="overlay">
+        <div id="popup">
+            <h1>How many questions would you like to answer?</h1>
+            <input type="number" class="number" id="modalInput">
+            <button id="modalButton">PLAY</button>
+        </div>
+    </div>
+        <div id="nav">
+            <ul id="nav-con">
+                <li><a href="/index.html" class="nav-link">Home</a></li>
+                <li><a href="/about.html" class="nav-link">About</a></li>
+                <li><a href="/contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 id="nareg">Nareg Game</h1>
+            <div id="equation">
+                <p class="number" id="firstNum"></p>
+                <p class="number" id="operator">+</p>
+                <p class="number" id="secondNum"></p>
+                <p class="number">=</p>
+                <input type="number" class="number" id="input">
+            </div>
+            <div id="scorecard">
+                <div class="card">
+                    <h2>Right Answers</h2>
+                    <p id="score">0</p>
+                </div>
+                <div class="card">
+                    <h2>Wrong Answers</h2>
+                    <p id="incorrect">0</p>
+                </div>
+                <div class="card">
+                    <h2>Total Answers</h2>
+                    <p id="total">0</p>
+                </div>
+                <div class="card" id="onehundred">
+                    <h2>Score</h2>
+                    <p id="perc">0.0%</p>
+                </div>
+            </div>
+        </div>
+    <audio src="ding.mp3" id="ding"></audio>
+    <audio src="wrong.mp3" id="wrong"></audio>
+    <script src="index.js"></script>
+</body>
+</html>
